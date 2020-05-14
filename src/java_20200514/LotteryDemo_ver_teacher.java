@@ -34,6 +34,19 @@ public class LotteryDemo_ver_teacher {
 			}
 		}
 		
+		/*내림차순
+		 * 부등호 방향만 바꾸면 됨.
+		for(int i = 0; i<lotto.length; i++) {
+			for(int j=0; j<lotto.length-(i+1);j++) {
+				if(lotto[j] > lotto[j+1]) {
+					int temp = lotto[j+1];
+					lotto[j+1] = lotto[j];
+					lotto[j] = temp;
+				}
+			}
+		}
+		*/
+		
 		for (int value : lotto) {
 			System.out.print(value + "\t");
 
