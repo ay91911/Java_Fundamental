@@ -28,6 +28,8 @@ public class LotteryDemo_ver_teacher {
 			System.out.print(value + "\t");
 
 		}
+		
+		//역시 git은 좋앗><
 	}
 
 }
