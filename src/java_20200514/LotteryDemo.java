@@ -8,27 +8,23 @@ public class LotteryDemo {
 		// Math.random() => 0보다 크거나 같고 1보다 작은 양수를 double 값으로 반환한다.
 		// Math.random()*45==>1~44, so 1을 더해줌=>1~45의 임의 랜덤값을 반환
 
-	//내 버전
+		// 내 버전
 		int[] lotto = new int[6];
 		for (int i = 0; i < lotto.length; i++) {
 			int random = (int) (Math.random() * 45) + 1;
-			first: for (int j = 0; j <= i-1; j++) {
-				if (i == 0)
-					continue first;
-				else {
-					while (random == lotto[j]) {
-						random = (int) (Math.random() * 45) + 1;
-					}
+			for (int j = 0; j < i; j++) {
+				while (random == lotto[j]) {
+					random = (int) (Math.random() * 45) + 1;
 				}
-
 			}
 			lotto[i] = random;
 
 		}
+
 		for (int value : lotto) {
 			System.out.print(value + "\t");
 
-		} 
-				
+		}
+
 	}
 }
