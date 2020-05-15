@@ -9,6 +9,10 @@ public class Customer {
 	public String phone;
 	public double balance;
 	public boolean isReleased;
-
+	//모든 사람의 interestRate가 같을때 static변수로 선언.
+	public static double interestRate;
+	//상수는 한번 정해지면 값을 변경할 수 없음.so,일반적으로 final변수로 사용. 
+	//상수는 대문자로 쓰는 것이 관례.
+	public static final String BANKNAME = "신한은행";
 
 }

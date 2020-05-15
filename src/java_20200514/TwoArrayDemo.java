@@ -42,8 +42,10 @@ public class TwoArrayDemo {
 				System.out.println(c[i][j]);
 				}
 		}
-		for(int value : c) {
-			System.out.println(value);
+		for(int[] test : c) {
+			for(int value : test) {
+				System.out.println(value);
+			}
 		}
 			
 		
