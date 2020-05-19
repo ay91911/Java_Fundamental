@@ -33,7 +33,7 @@ public class StaticMethodDemo {
 		System.out.println("m4() static 메서드 호출");
 	}
 	
-	//main 안에 잇는 것만 실행 가능!!
+	//main 안에 있는 것만 실행 가능!!
 	public static void main(String[] args) {
 		StaticMethodDemo.m4();
 		StaticMethodDemo.m3();
