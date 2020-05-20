@@ -17,12 +17,12 @@ public class AdminDemo {
 		System.out.println(a.getEmail());
 		System.out.println(a.getLevel());
 
-		Admin a1 = new Admin("ay91912","1112","ay91912@gmail.com");{
+		Admin a1 = new Admin("ay91912","1112","ay91912@gmail.com");
 			
 			System.out.println(a1.getId());
 			System.out.println(a1.getPwd());
 			System.out.println(a1.getEmail());
 			System.out.println(a1.getLevel());
-		}
+		
 	}
 }
