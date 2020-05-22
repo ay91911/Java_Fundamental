@@ -1,5 +1,7 @@
 package java_20200519;
-
+/**
+ Calendar 클래스는 엄청난 클래스
+ */
 public class Calendar {
 	private int[] monthArray = { 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
 	
@@ -54,7 +56,9 @@ public class Calendar {
 		}
 		return monthArray[month-1];
 	}
-	
+/**
+ 요일을 출력해주는 메서드입니다.
+ */
 	public void print(int year, int month, int day) {
 
 		int totalCount = getCount(year,month,day);
@@ -79,7 +83,9 @@ public class Calendar {
 		}
 		System.out.println(year + "년" + " " + month + "월" + " " + day + "일은" + " " + message + "입니다.");
 	}
-	
+/**
+ 월 달력을 출력해주는 메서드입니다.
+ */	
 	public void print(int year, int month) {
 		System.out.println("일\t월\t화\t수\t목\t금\t토");
 		
@@ -100,7 +106,9 @@ public class Calendar {
 		}
 		System.out.println();
 	}
-	
+/**
+연 단력을 출력해주는 메서드입니다.
+*/
 	public void print(int year) {
 		for(int i=1; i<=12;i++) {
 			print(year,i);

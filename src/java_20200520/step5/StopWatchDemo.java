@@ -15,14 +15,14 @@ public class StopWatchDemo {
 		//StopNanoWatch s1 = new StopNanoWatch();
 		//StopMilliWatch s1 = new StopMilliWatch();
 		//StopMicroWatch s1 = new StopMicroWatch();
-		//run(s1);ikhuil
+		//run(s1);
 		
-		//Java IO 하는 방법(line 20 - 22)
+		//Java IO 하는 방법(line 21 - 23)
 		BufferedReader br = new BufferedReader(new FileReader("C:\\dev\\eclipse-workspace\\Java_Fundamental\\src\\java_20200520\\step5\\class.txt"));
 		
 		String readLine = br.readLine();
 		
-		//Java Reflection 하는 방법(line 25 - 27)
+		//Java Reflection 하는 방법(line 26 - 28)
 		Class clazz = Class.forName(readLine);
 		StopWatch s = (StopWatch)clazz.newInstance();
 		run(s);
