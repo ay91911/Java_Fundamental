@@ -1,3 +1,4 @@
+
 package homework;
 
 public class homework_200517 {
@@ -18,3 +19,4 @@ public class homework_200517 {
 		System.out.println("1부터100까지 소수의 합은 "+sum+"입니다.");
 	}
 }
+
