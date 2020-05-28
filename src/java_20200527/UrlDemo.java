@@ -23,8 +23,7 @@ public class UrlDemo {
 		System.out.println("query: "+query);
 		System.out.println("reference: "+reference);
 		
-		
-		
+	
 		
 		
 		InputStream in = url.openStream();//html 정보가 "in"인풋스트림에 들어가있음.
